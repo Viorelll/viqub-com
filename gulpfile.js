@@ -18,7 +18,7 @@ let path = {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"], // HTML'S IS NOT IN ASSETS FOLDER
         css: source_folder_assets + "/scss/style.scss",
         js: source_folder_assets + "/js/script.js",
-        images: source_folder_assets + "/images/**/*.{jpg, png, svg, gif, ico, webp}",
+        images: source_folder_assets + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder_assets + "/fonts/*.ttf",
     },
 
@@ -26,7 +26,7 @@ let path = {
         html: source_folder + "/**/*.html", // HTML'S IS NOT IN ASSETS FOLDER
         css: source_folder_assets + "/scss/**/*.scss",
         js: source_folder_assets + "/js/**/*.js",
-        images: source_folder_assets + "/images/**/*.{jpg, png, svg, gif, ico, webp}",
+        images: source_folder_assets + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
     },
 
     clean: "./" + project_folder + "/"
@@ -127,10 +127,10 @@ function images() {
                 progressive: true,
                 svgoPlugins: [{ removeViewBox: false }],
                 interlaced: true,
-                optimizationLevel: 3 // 0 to 7
+                optimizationLevel: 0 // 0 to 7
             })
         )
-        .pipe(fileinclude())
+        //.pipe(fileinclude())
         .pipe(dest(path.build.images)) //MOVE DEFAULT IMAGE
         .pipe(browsersync.stream())
 }
@@ -151,7 +151,7 @@ gulp.task('svgSprite', function () {
             mode: {
                 stack: {
                     sprite: '../icons/icons.svg', //sprite file name
-                    example: true //show preview features an SVG stack
+                    //example: true //show preview features an SVG stack
                 }
             }
         }))
