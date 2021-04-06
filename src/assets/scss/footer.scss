@@ -1,7 +1,7 @@
 
   .header {
     .navbar {
-        background: #E5E5E5;
+        background: #fff;
         display: flex;
         height: 60px;
 
@@ -18,10 +18,11 @@
        }
 
       &__logo {
+        margin-left: 10px;
 
         .logo {
             display: flex;
-
+            align-items: center;
           &__icon {
               margin-right: 5px;
           }
@@ -29,7 +30,7 @@
             font-family: Inter;
             font-style: normal;
             font-weight: bold;
-            font-size: 24px;  
+            font-size: 32px;  
             color: #18113C;
           }
           img {
@@ -42,7 +43,7 @@
       }
 
       .menu {
-          
+          margin: 0px 40px;
         &__list {
             display: flex;
         }
@@ -50,13 +51,17 @@
            list-style-type: none;
            margin: 0 10px;
 
+          a {
+            color: inherit;
+          }
+
           .menu__link {
             text-decoration: none;
 
             font-family: Inter;
             font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
+            font-weight: 600;
+            font-size: 16px;
 
             &:hover {}
             &:active {}
@@ -64,30 +69,85 @@
           }
         }
       }
-      .form {
+
+      &__form {
+        
+        input[type=text] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #DBD8E9;
+          border-radius: 4px;
+          box-sizing: border-box;
+          font-weight: 600;
+        }
+
+        input[type=text]:focus {
+          border: 1px solid #DBD8E9;
+        }
+
       } 
     }
     .presentation {
         display: flex;
         justify-content: space-around;
         height: 408px;
+        background-color: #754FFE;
+
       &__main {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          width: 550px;
         .presentation__title {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+          margin-bottom: 20px;
         }
         .presentation__description {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          color: rgba(255, 255, 255, 0.5);
+          margin-bottom: 20px;
         }
         .presentation__buttons {
+          justify-content: space-between;
         }
         .button.btn-primary {
+          background: #19CB98;
+          border: 1px solid #19CB98;
+          box-sizing: border-box;
+          border-radius: 4px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          color: #fff;
+          height: 60px;
+          width: 245px;
           &:hover {}
           &:active {}
           &:focus {}
         }
         .button.btn-light {
+          background: #FFFFFF;
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 4px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          color: #000;
+          height: 60px;
+          width: 245px;
           &:hover {}
           &:active {}
           &:focus {}
@@ -139,7 +199,6 @@
   padding: 2px 8px;
   pointer-events: none;
 }
-
 
 .profile {
 &__image {

@@ -35,7 +35,7 @@ body {
 }
 
 .header .navbar {
-  background: #E5E5E5;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,10 +66,17 @@ body {
           justify-content: center;
 }
 
+.header .navbar__logo {
+  margin-left: 10px;
+}
+
 .header .navbar__logo .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .navbar__logo .logo__icon {
@@ -80,12 +87,16 @@ body {
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 32px;
   color: #18113C;
 }
 
 .header .navbar__profile {
   margin-right: 10px;
+}
+
+.header .navbar .menu {
+  margin: 0px 40px;
 }
 
 .header .navbar .menu__list {
@@ -99,12 +110,32 @@ body {
   margin: 0 10px;
 }
 
+.header .navbar .menu li a {
+  color: inherit;
+}
+
 .header .navbar .menu li .menu__link {
   text-decoration: none;
   font-family: Inter;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.header .navbar__form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #DBD8E9;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+}
+
+.header .navbar__form input[type=text]:focus {
+  border: 1px solid #DBD8E9;
 }
 
 .header .presentation {
@@ -114,6 +145,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 408px;
+  background-color: #754FFE;
 }
 
 .header .presentation__main {
@@ -130,6 +162,61 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 550px;
+}
+
+.header .presentation__main .presentation__title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.header .presentation__main .presentation__description {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.header .presentation__main .presentation__buttons {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .presentation__main .button.btn-primary {
+  background: #19CB98;
+  border: 1px solid #19CB98;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  height: 60px;
+  width: 245px;
+}
+
+.header .presentation__main .button.btn-light {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  height: 60px;
+  width: 245px;
 }
 
 .header .statistics {
