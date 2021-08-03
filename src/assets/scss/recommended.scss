@@ -1,0 +1,62 @@
+.recomended {
+
+    &__title {
+      
+    }
+
+    &__articles {
+
+    }
+}
+.article {
+
+    height: 310px;
+    width: 255px;
+    border: 1px solid black;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        padding-left: 10%;
+    }
+
+    &_title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #18113C;
+    }
+
+    &__image {
+    }
+
+    &__level {
+
+        display: flex;
+        color: #5C5776;
+        opacity: 0.5;
+
+        &_icon {
+        }
+
+        &_title {
+        }
+    }
+
+    &__author {
+
+        display: flex;
+        color: #5C5776;
+        opacity: 0.5;
+
+        &_image {
+        }
+
+        &_owner {
+        }
+
+        &_icon {
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.statistics {
+    height: 96px;
+    display: flex;
+    align-items: center;
+ 
+
+    &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+      .card {
+        display: flex;
+
+        &__icon {
+        }
+
+        &__body {
+          padding: 0px 5px;
+        }
+
+        &__title {
+          font-weight: bold;
+        }
+        &__description {
+        }
+
+        img {
+        }
+      }
+    }
+}

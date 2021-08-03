@@ -12,5 +12,14 @@ body {
     margin: 0 0;
 }
 
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
 @import "fonts";
+@import "header";
+@import "statistics";
+@import "recommended";
+@import "most_popular";
 @import "footer";
