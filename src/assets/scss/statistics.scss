@@ -1,32 +1,41 @@
 .statistics {
-    height: 96px;
-    display: flex;
-    align-items: center;
- 
+  font-family: Lato;
+  font-style: normal;
+  font-size: 14px;
 
-    &__cards {
+  height: 96px;
+  display: flex;
+  align-items: center;
+
+
+  &__cards {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
 
-      .card {
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      &__icon {}
+
+      &__body {
+        padding: 0px 5px;
         display: flex;
-
-        &__icon {
-        }
-
-        &__body {
-          padding: 0px 5px;
-        }
-
-        &__title {
-          font-weight: bold;
-        }
-        &__description {
-        }
-
-        img {
-        }
+        flex-direction: column;
+        gap: 5px;
       }
+
+      &__title {
+        font-weight: 600;
+      }
+
+      &__description {
+        font-weight: 400;
+      }
+
+      img {}
     }
+  }
 }
