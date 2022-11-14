@@ -58,7 +58,9 @@
     
             &_icon {}
     
-            &_title {}
+            &_title {
+                font-size: 14px;
+            }
         }
     
         &__author {
@@ -78,7 +80,9 @@
                 }
             }
     
-            &_owner {}
+            &_owner {
+                font-size: 14px;
+            }
     
             &_icon {}
         }

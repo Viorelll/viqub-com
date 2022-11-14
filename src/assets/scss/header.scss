@@ -1,5 +1,6 @@
 
   .header {
+    background-color: #fff;
     .navbar {
         background: #fff;
         display: flex;
@@ -122,6 +123,9 @@
         .presentation__buttons {
           display: flex;
           gap: 25px;
+        }
+        .button {
+          cursor: pointer;
         }
         .button.btn-primary {
           background: #19CB98;
