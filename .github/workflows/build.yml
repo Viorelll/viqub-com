@@ -34,3 +34,6 @@ jobs:
 
       - name: Build otf2ttf  
         run: gulp otf2ttf
+
+      - name: Build
+        run: npm run build
