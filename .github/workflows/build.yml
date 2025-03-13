@@ -27,7 +27,7 @@ jobs:
         run: npm i gulp-install
 
       - name: Install webp converter
-        run: npm install webp-converter@2.2.3 --save-dev
+        run: npm install webp-converter@2.2.3 --save-exact
         
       - name: Build svgSprites
         run: gulp svgSprite
