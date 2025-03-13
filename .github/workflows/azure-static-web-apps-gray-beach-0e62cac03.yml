@@ -1,13 +1,14 @@
 name: Azure Static Web Apps CI/CD
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - master
+ workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+    secrets:
+      AZURE_STATIC_WEB_APPS_API_TOKEN:
+        required: true
 
 jobs:
   build_and_deploy_job:
