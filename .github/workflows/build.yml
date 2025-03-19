@@ -9,7 +9,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: /
+        working-directory: angular
 
     steps:
       - name: Checkout
@@ -18,22 +18,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
 
       - name: Install dependencies
         run: npm install
-
-      - name: Install Gulp
-        run: npm i gulp-install
-
-      - name: Install webp converter
-        run: npm install webp-converter@2.2.3 --save-exact
-        
-      - name: Build svgSprites
-        run: gulp svgSprite
-
-      - name: Build otf2ttf  
-        run: gulp otf2ttf
 
       - name: Build
         run: npm run build
