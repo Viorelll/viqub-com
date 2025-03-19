@@ -26,4 +26,4 @@ jobs:
           action: "upload"
           app_location: "/angular"
           output_location: "dist/angular"
-          app_build_command: "npm run build -- --prod"
+          app_build_command: "npm run build -- --production"
